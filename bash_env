@@ -8,5 +8,8 @@ parse_git_branch() {
 #export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 #export PS1='\n\u@\h: \w $(parse_git_branch)\[\033[00m\]\n $ '
 
-export PS1="$NO_COLOUR[\d \t] [$BLUE\u$SSH_FLAG] [$YELLOW\w$NO_COLOUR] $RED\$(parse_git_branch) $BLUE\\$ $NO_COLOUR"
+#export PS1="$NO_COLOUR[\d \t] [$BLUE\u$SSH_FLAG] [$YELLOW\w$NO_COLOUR] $RED\$(parse_git_branch) $BLUE\\$ $NO_COLOUR"
 
+export PS1="$NO_COLOUR [$BLUE\u$SSH_FLAG] [$YELLOW\w$NO_COLOUR] $RED\$(parse_git_branch) $BLUE\\$ $NO_COLOUR"
+
+#export JAVA_HOME=/usr/bin/java
