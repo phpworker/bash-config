@@ -15,5 +15,10 @@ alias grh='git reset --hard'
 alias gr='git remote -v'
 
 alias ll='ls -la'
+alias railo='ssh www-data@10.32.42.69'
 
+alias vus='cd ~/git/vagrant/vm_kubernetes/;vagrant up;vagrant ssh;'
+alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
 
+alias restart_audio='sudo killall coreaudiod;sudo killall ControlStrip;'

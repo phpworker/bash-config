@@ -12,4 +12,9 @@ parse_git_branch() {
 
 export PS1="$NO_COLOUR [$BLUE\u$SSH_FLAG] [$YELLOW\w$NO_COLOUR] $RED\$(parse_git_branch) $BLUE\\$ $NO_COLOUR"
 
-#export JAVA_HOME=/usr/bin/java
+#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/
+
+# iTerm badge
+function iterm2_print_user_vars() {
+  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+}
