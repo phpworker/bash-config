@@ -18,3 +18,5 @@ export PS1="$NO_COLOUR [$BLUE\u$SSH_FLAG] [$YELLOW\w$NO_COLOUR] $RED\$(parse_git
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
 }
+
+nvm use 12.16.1
